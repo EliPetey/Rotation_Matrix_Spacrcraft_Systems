@@ -11,11 +11,12 @@ R = cosΦI + (1 - cosΦ)ee' - sinΦex
 For faster computation, define it OUTSIDE the function if you have to repeatedly call the funciton in a loop.
 
 **Rotation_2 uses quaternion elements, without any trigonometric operations**
+
 **Rotation Matrix in terms of Quaternion Elements**
 
-$$R(\mathbf{q}) = \begin{bmatrix}
-1 - 2(q_2^2 + q_3^2) & 2(q_1q_2 - q_3q_4) & 2(q_1q_3 + q_2q_4) \
-2(q_1q_2 + q_3q_4) & 1 - 2(q_1^2 + q_3^2) & 2(q_2q_3 - q_1q_4) \
+$$R(\mathbf{q}) = \begin{bmatrix} 
+1 - 2(q_2^2 + q_3^2) & 2(q_1q_2 - q_3q_4) & 2(q_1q_3 + q_2q_4) \\
+2(q_1q_2 + q_3q_4) & 1 - 2(q_1^2 + q_3^2) & 2(q_2q_3 - q_1q_4) \\
 2(q_1q_3 - q_2q_4) & 2(q_2q_3 + q_1q_4) & 1 - 2(q_1^2 + q_2^2)
 \end{bmatrix}$$
 
