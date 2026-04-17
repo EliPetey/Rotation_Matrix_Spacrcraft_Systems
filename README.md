@@ -1,7 +1,7 @@
 # Rotation_Matrix_Spacrcraft_Systems
 Simple MATLAB powered script that calculates the Rotation Matrix from a given Euler Angle and Euler Axis
 
-**Rotation_1 uses the Euler Axis and Euler Angle **
+**Rotation_1 uses the Euler Axis and Euler Angle**
 e is defined as a column vector 
 ee' is defined as the outer product it returns a 3x3 matrix
 ex is the matrix product. It is not an operation but a definition hence you have to define it within the function. 
