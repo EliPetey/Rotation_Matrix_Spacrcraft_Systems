@@ -12,6 +12,7 @@ Calculate the Attitude Quaternion and Rotation Matrix
 e is defined as a column vector 
 ee' is defined as the outer product it returns a 3x3 matrix
 ex is the matrix product. It is not an operation but a definition hence you have to define it within the function. 
+
 **Rotation Matrix expressed in terms of Euler Axis and Angle**
 
 $$
