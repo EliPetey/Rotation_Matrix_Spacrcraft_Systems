@@ -14,11 +14,13 @@ For faster computation, define it OUTSIDE the function if you have to repeatedly
 
 **Rotation Matrix in terms of Quaternion Elements**
 
-$$R(\mathbf{q}) = \begin{bmatrix} 
+$$
+R(\mathbf{q}) = \left[ \begin{array}{ccc}
 1 - 2(q_2^2 + q_3^2) & 2(q_1q_2 - q_3q_4) & 2(q_1q_3 + q_2q_4) \\
 2(q_1q_2 + q_3q_4) & 1 - 2(q_1^2 + q_3^2) & 2(q_2q_3 - q_1q_4) \\
 2(q_1q_3 - q_2q_4) & 2(q_2q_3 + q_1q_4) & 1 - 2(q_1^2 + q_2^2)
-\end{bmatrix}$$
+\end{array} \right]
+$$
 
 It is computationally very fast
 As you can see from tic and toc, Rotation_2 is significantly faster
