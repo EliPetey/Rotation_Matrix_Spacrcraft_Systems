@@ -3,6 +3,7 @@ Simple MATLAB powered script that calculates the Rotation Matrix from a given Eu
 
 The question in mind is: 
 The orientation of the body frame of a spacecraft with respect to the orbital frame is given by the Euler axis and angle:
+
 $$\mathbf{e}$$ = (0.0975, 0.2785, 0.9555), $$\Phi$$ = 197°
 
 Calculate the Attitude Quaternion and Rotation Matrix
