@@ -1,12 +1,21 @@
 # Rotation_Matrix_Spacrcraft_Systems
 Simple MATLAB powered script that calculates the Rotation Matrix from a given Euler Angle and Euler Axis
 
+The question in mind is: 
+The orientation of the body frame of a spacecraft with respect to the orbital frame is given by the Euler axis and angle:
+$$\mathbf{e}$$ = (0.0975, 0.2785, 0.9555), $$\Phi$$ = 197°
+
+Calculate the Attitude Quaternion and Rotation Matrix
+
 **Rotation_1 uses the Euler Axis and Euler Angle**
 e is defined as a column vector 
 ee' is defined as the outer product it returns a 3x3 matrix
 ex is the matrix product. It is not an operation but a definition hence you have to define it within the function. 
 **Rotation Matrix expressed in terms of Euler Axis and Angle**
-R = cosΦI + (1 - cosΦ)ee' - sinΦex
+
+$$
+R = \cos\Phi I + (1 - \cos\Phi) \mathbf{e}\mathbf{e}^T - \sin\Phi [\mathbf{e}\times]
+$$
 
 For faster computation, define it OUTSIDE the function if you have to repeatedly call the funciton in a loop.
 
